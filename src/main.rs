@@ -11,6 +11,7 @@ use std::path::{self, Path};
 
 #[derive(Parser)]
 struct Cli {
+    #[clap(short, long, default_value = ".")]
     path: std::path::PathBuf,
 }
 
